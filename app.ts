@@ -1,25 +1,11 @@
-// const person: {
-//   name: string;
-//   age: number;
-// } = {
-const person: {
-  name: string;
-  age: number;
-  hobbies: string[];
-  role: [number, string];
-} = {
-  name: 'Epinder',
-  age: 38,
-  hobbies: ['Sports', 'cooking'],
-  role: [2, 'author'],
-};
-
-let favouriteActivites: string[];
-favouriteActivites = person.hobbies;
-
-console.log(person.name);
-console.log(favouriteActivites);
-
-for (const hobby of person.hobbies) {
-  console.log(hobby.toLocaleUpperCase());
+function add(n1: number, n2: number) {
+  return n1 + n2;
 }
+
+function printResult(num: number): void {
+  console.log('Result is:' + num);
+  const p = document.querySelector('p');
+  p.innerHTML = 'Result is : ' + num;
+}
+
+printResult(add(5, 10));
